@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <defs>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFEAA7" />
+      <stop offset="50%" stop-color="#D4AF37" />
+      <stop offset="100%" stop-color="#9E7A1C" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+  <!-- Background circle -->
+  <circle cx="32" cy="32" r="30" fill="#050814" stroke="url(#goldGrad)" stroke-width="2" />
+  <!-- Cap top -->
+  <polygon points="32,16 56,26 32,36 8,26" fill="url(#goldGrad)" filter="url(#glow)" />
+  <!-- Cap skull bottom -->
+  <path d="M20,31.5 L20,44 C20,49 44,49 44,44 L44,31.5" fill="#0B132B" stroke="url(#goldGrad)" stroke-width="1.5" />
+  <!-- Tassel ribbon -->
+  <path d="M32,26 Q46,27 48,38" stroke="#FFEAA7" stroke-width="1.8" stroke-linecap="round" fill="none" />
+  <circle cx="48" cy="39" r="2.5" fill="url(#goldGrad)" />
+</svg>
